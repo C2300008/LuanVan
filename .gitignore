@@ -1,0 +1,12 @@
+# Bỏ qua thư mục biên dịch của Rust (Thư mục này nặng nhất, không đưa lên Git)
+/target/
+
+# Bỏ qua các file cấu hình môi trường chứa mật khẩu, chuỗi kết nối Database bảo mật
+.env
+.env*.local
+
+# Bỏ qua các file thừa do hệ điều hành tự sinh ra (nếu bạn dùng Mac)
+.DS_Store
+
+# Bỏ qua các file log tạm thời
+*.log
