@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
 /**
- * @typedef {Object} baiDangYeuThichSchema
- * @property {String} bdcs_ID - khóa chính, mã bài đăng yêu thích
+ * @typedef {Object} baiDangChiaSeSchema
+ * @property {String} bdcs_ID - khóa chính, mã bài đăng chia sẻ, được tạo tự động với tiền tố "BDCS_" phía trước.
  * @property {mongoose.Types.ObjectId} nd_ID - khóa ngoai, mã người dùng.
  * @property {mongoose.Types.ObjectId } bd_ID - khóa ngoại, mã bài đăng.
  * @property {Date} bdcs_NgayChiaSe - ngày chia se bài đăng.

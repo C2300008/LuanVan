@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
 /**
- *
  * @typedef {Object} baiDangSchema
  * @property {String} bd_ID - khóa chính, mã bài đăng.
  * @property {mongoose.Types.ObjectId } nd_ID - khóa ngoại, mã người dùng.

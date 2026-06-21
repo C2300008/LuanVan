@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 /**
- * @typedef {Object} BaiNhacChiaSe
+ * @typedef {Object} baiNhacChiaSeSchema
  * @property {String} bncs_ID - mã chia sẻ bài nhạc, được tạo tự động với tiền tố "BNCS_" phía trước.
  * @property {mongoose.Schema.Types.ObjectId} nd_ID - mã người dùng, tham chiếu đến bảng người dùng.
  * @property {mongoose.Schema.Types.ObjectId} bn_ID - mã bài nhạc, tham chiếu đến bảng bài nhạc.

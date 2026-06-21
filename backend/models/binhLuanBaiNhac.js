@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
 /**
- * @typedef {Object} BinhLuanBaiNhac
- * @property {String} blbn_ID - mã bình luận bài nhạc, được tạo tự động với tiền tố "BLBN_" phía trước.
+ * @typedef {Object} binhLuanBaiNhacSchema
+ * @property {String} blbn_ID - khóa chính, mã bình luận bài nhạc, được tạo tự động với tiền tố "BLBN_" phía trước.
  * @property {mongoose.Schema.Types.ObjectId} bn_ID - mã bài nhạc, tham chiếu đến bảng bài nhạc.
  * @property {mongoose.Schema.Types.ObjectId} nd_ID - mã người dùng, tham chiếu đến bảng người dùng.
  * @property {String} blbn_NoiDung - nội dung bình luận bài nhạc.

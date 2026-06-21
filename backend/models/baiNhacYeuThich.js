@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 /**
- * @typedef {Object} BaiNhacYeuThich
+ * @typedef {Object} baiNhacYeuThichSchema
  * @property {String} bnyt_ID - mã yêu thích bài nhạc, được tạo tự động với tiền tố "BNYT_" phía trước.
  * @property {mongoose.Schema.Types.ObjectId} nd_ID - mã người dùng, tham chiếu đến bảng người dùng.
  * @property {mongoose.Schema.Types.ObjectId} bn_ID - mã bài nhạc, tham chiếu đến bảng bài nhạc.
