@@ -4,7 +4,7 @@ import mongoose from "mongoose";
  *
  * @typedef {Object} nhacSiSchema
  * @property {String} ns_ID - khóa chính, mã nhạc sĩ.
- * @property {mongoose.Types.ObjectId} nd_ID - khóa ngoại, mã người dùng.
+ * @property {mongoose.Schema.Types.ObjectId} nd_ID - khóa ngoại, mã người dùng.
  * @property {String} ns_NgheDanh - Nghệ danh hoạt động nghệ thuật (từ 2 đến 50 ký tự).
  * @property {String} ns_MoTa - Đoạn văn mộ tả tiểu sư bảng thân nghệ sĩ (tối đa 1000 ký tự).
  * @property {Date} ns_NgayTao - Thời điểm hồ sơ nhạc sĩ được tạo thành công.

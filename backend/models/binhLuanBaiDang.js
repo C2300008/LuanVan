@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 /**
  * @typedef {Object} binhLuanBaiDangSchema
  * @property {String} blbd_ID - khóa chính, mã bình luận bài đăng.
- * @property {mongoose.Types.ObjectId } nd_ID - khóa ngoại, mã người dùng.
- * @property {mongoose.Types.ObjectId } bd_ID - khóa ngoại, mã khóa ngoại.
+ * @property {mongoose.Schema.Types.ObjectId } nd_ID - khóa ngoại, mã người dùng.
+ * @property {mongoose.Schema.Types.ObjectId } bd_ID - khóa ngoại, mã khóa ngoại.
  * @property {String} blbd_NoiDung - nội dung bình luận (không vượt quá 200 ký tự).
  * @property {String} blbd_DuongDan - đường dẫn phân cấp cha con (lưu ID bình luận cha phía trước, cách nhau bởi đấu / )
  * @property {Date} blbd_NgayBinhLuan - ngày bình luộn bài đăng (không lớn hơn ngày hiện tại).

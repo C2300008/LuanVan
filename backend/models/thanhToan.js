@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 /**
  * @typedef {Object} thanhToanSchema
  * @property {String} tt_ID - Khóa chính, mã thanh toán.
- * @property {mongoose.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng.
- * @property {mongoose.Types.ObjectId} uh_ID - Khóa ngoại, mã ủng hộ.
+ * @property {mongoose.Schema.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng.
+ * @property {mongoose.Schema.Types.ObjectId} uh_ID - Khóa ngoại, mã ủng hộ.
  * @property {Number} tt_SoTienThanhToan - Số tiền thanh toán (không được để trống, số nguyên dương và phải lớn hơn hoặc bằng 0).
  * @property {String} tt_MaGiaoDich - Mã giao dịch (không được để trống, phải là duy nhất).
  * @property {Date} TT_NgayThanhToan - Ngày thanh toán (không được để trống, mặc định là ngày hiện tại).

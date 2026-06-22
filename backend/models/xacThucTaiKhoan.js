@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 /**
  * @typedef {Object} xacThucTaiKhoanSchema
  * @property {String} xttk_ID - Khóa chính, mã xác thực tài khoản.
- * @property {mongoose.Types.ObjectId} tk_ID - Khóa ngoại, mã tài khoản liên kết.
+ * @property {mongoose.Schema.Types.ObjectId} tk_ID - Khóa ngoại, mã tài khoản liên kết.
  * @property {String} xttk_MaXacThuc - Mã xác thực được tạo ra để xác minh tài khoản (ví dụ: mã OTP).
  * @property {Date} xttk_ThoiGianHetHan - Thời điểm mã xác thực hết hạn và không còn hiệu lực.
  * @property {String} xttk_TrangThai - Trạng thái của mã xác thực (ví dụ: "Đang chờ", "Đã xác thực", "Hết hạn").

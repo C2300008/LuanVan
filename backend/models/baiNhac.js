@@ -4,7 +4,7 @@ import mongoose from "mongoose";
  *
  * @typedef {Object} baiNhacSchema
  * @property {String} bn_ID - khóa chính, mã bài nhạc.
- * @property {mongoose.Types.ObjectId} ns_ID - khóa ngoại, mã nhạc sĩ.
+ * @property {mongoose.Schema.Types.ObjectId} ns_ID - khóa ngoại, mã nhạc sĩ.
  * @property {String} bn_TenBaiNhac - Tên của bài nhạc (từ 1 đến 150 ký tự).
  * @property {String} bn_LoiBaiNhac - Lời chi tiết của bài nhạc (có thể để trống).
  * @property {String[]} bn_AnhBia - Mảng danh sách đường dẫn URL lưu trữ hình ảnh bìa của bài nhạc.

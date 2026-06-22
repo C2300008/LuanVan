@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 /**
  * @typedef {Object} tinNhanSchema
  * @property {String} tn_ID - Khóa chính, mã tin nhắn.
- * @property {mongoose.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng gửi tin nhắn.
- * @property {mongoose.Types.ObjectId} ctc_ID - Khóa ngoại, mã cuộc trò chuyện chứa tin nhắn.
+ * @property {mongoose.Schema.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng gửi tin nhắn.
+ * @property {mongoose.Schema.Types.ObjectId} ctc_ID - Khóa ngoại, mã cuộc trò chuyện chứa tin nhắn.
  * @property {String} tn_NoiDung - Nội dung của tin nhắn (từ 1 đến 1000 ký tự).
  * @property {Date} tn_NgayGui - Ngày và giờ gửi tin nhắn, mặc định là thời điểm hiện tại.
  * @property {String} tn_TrangThai - Trạng thái của tin nhắn (Đã gửi, Đã nhận, Đã đọc).

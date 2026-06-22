@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 /**
  * @typedef {Object} baiDangSchema
  * @property {String} bd_ID - khóa chính, mã bài đăng.
- * @property {mongoose.Types.ObjectId } nd_ID - khóa ngoại, mã người dùng.
+ * @property {mongoose.Schema.Types.ObjectId} nd_ID - khóa ngoại, mã người dùng.
  * @property {String} bd_NoiDung - Nội dung bài đăng (từ 1 đến 200 ký tự).
  * @property {[String]} bd_TepDinhKem - tệp đính kèm ảnh hoặc video (kiểu mảng String có thể đăng nhiều hình hoặc nhiều video).
  * @property {Number} bd_LuotThich - Tổng số lượt thích bài đăng (số nguyên dương không âm).

@@ -3,8 +3,8 @@ import mongoose from "mongoose";
  * Mô hình dữ liệu cho nhân viên.
  * @typedef {Object} nhanVienSchema
  * @property {String} nv_ID - Khóa chính, mã nhân viên.
- * @property {mongoose.Types.ObjectId} tk_ID - Khóa ngoại, mã tài khoản liên kết với nhân viên.
- * @property {mongoose.Types.ObjectId} vt_ID - Khóa ngoại, mã vai trò của nhân viên.
+ * @property {mongoose.Schema.Types.ObjectId} tk_ID - Khóa ngoại, mã tài khoản liên kết với nhân viên.
+ * @property {mongoose.Schema.Types.ObjectId} vt_ID - Khóa ngoại, mã vai trò của nhân viên.
  * @property {String} nv_HoVaTen - Họ và tên của nhân viên.
  * @property {String} nv_SoDienThoai - Số điện thoại của nhân viên, phải hợp lệ theo định dạng số điện thoại Việt Nam.
  * @property {String} nv_DiaChi - Địa chỉ của nhân viên.

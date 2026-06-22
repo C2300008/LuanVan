@@ -5,7 +5,7 @@ import mongoose from "mongoose";
  *
  * @typedef {Object} nguoiDungSchema
  * @property {String} nd_ID - khóa chính, mã người dùng.
- * @property {mongoose.Types.ObjectId } tk_ID - khóa ngoại, mã tài khoản.
+ * @property {mongoose.Schema.Types.ObjectId } tk_ID - khóa ngoại, mã tài khoản.
  * @property {String} nd_HoVaTen - họ và tên của người dùng (từ 2 đến 50 ký tự).
  * @property {Date} nd_NgaySinh - Ngày tháng năm sinh của người dùng.
  * @property {String} nd_GioiTinh - Giới tính người dùng (nam, nữ, khác).

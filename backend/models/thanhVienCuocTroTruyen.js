@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 /**
  * @typedef {Object} thanhVienCuocTroTruyenSchema
  * @property {String} tvctt_ID - Khóa chính, mã thành viên cuộc trò truyện.
- * @property {mongoose.Types.ObjectId} ctc_ID - Khóa ngoại, mã cuộc trò truyện.
- * @property {mongoose.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng.
+ * @property {mongoose.Schema.Types.ObjectId} ctc_ID - Khóa ngoại, mã cuộc trò truyện.
+ * @property {mongoose.Schema.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng.
  * @property {Date} tvctt_NgayThamGia - Ngày người dùng tham gia cuộc trò truyện.
  * @property {String} tvctt_TrangThai - Trạng thái thành viên cuộc trò truyện (Đang tham gia, Đã rời đi).
  * @property {Date} tvctt_NgayTao - Thời điểm thông tin được khởi tạo
