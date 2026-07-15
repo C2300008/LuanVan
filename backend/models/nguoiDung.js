@@ -1,23 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- *
- *
- * @typedef {Object} nguoiDungSchema
- * @property {String} nd_ID - khóa chính, mã người dùng.
- * @property {mongoose.Schema.Types.ObjectId } tk_ID - khóa ngoại, mã tài khoản.
- * @property {String} nd_HoVaTen - họ và tên của người dùng (từ 2 đến 50 ký tự).
- * @property {Date} nd_NgaySinh - Ngày tháng năm sinh của người dùng.
- * @property {String} nd_GioiTinh - Giới tính người dùng (nam, nữ, khác).
- * @property {String} nd_DiaChi - Địa chỉ nơi ở của người dùng (tối đa 200 ký tự).
- * @property {String} nd_SoDienThoai - Số điện thoại người dùng (đúng định dạng nhà mạng Việt Nam).
- * @property {String} nd_AnhDaiDien - Ảnh đại diện  của người dùng(đương dẫn URL).
- * @property {String} nd_TieuSu - Tiểu sử đoạn giới thiệu ngắn của bảng thân (tối đa 500 ký tự).
- * @property {String} nd_TrangThai - Trang Thái hoạt động cá nhân (hoạt động, bị khóa).
- * @property {Date} nd_NgayTao - thời điểm thông tin người dugnf được khởi tạo.
- * @property {Date} nd_NgayCapNhat - thời điểm thông tin người dùng được thay đổi.
- */
-
 const nguoiDungSchema = new mongoose.Schema(
   {
     tk_ID: {

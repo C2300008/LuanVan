@@ -1,13 +1,5 @@
 import mongoose from "mongoose";
-/**
- * @typedef {Object} quyenRiengTuSchema
- * @property {String} qrt_ID - Khóa chính, mã quyền riêng tư.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng.
- * @property {Boolean} qrt_AnThongTinCaNhan - Quyền ẩn thông tin cá nhân (true: ẩn, false: không ẩn).
- * @property {Date} qrt_NgayTao - thời điểm dữ liệu được khởi tạo.
- * @property {Date} qrt_NgayCapNhat - thời điểm dữ liệu được cập nhật.
- *
- */
+
 const quyenRiengTuSchema = new mongoose.Schema(
   {
     nd_ID: {

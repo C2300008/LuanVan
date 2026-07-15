@@ -1,15 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} banBeSchema
- * @property {String} bb_ID - Khóa chính, mã lời mời kết bạn.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID_GuiLoiMoi - Khóa ngoại, mã người dùng gửi lời mời kết bạn.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID_NhanLoiMoi - Khóa ngoại, mã người dùng nhận lời mời kết bạn.
- * @property {Date} bb_NgayGui - Ngày và giờ gửi lời mời kết bạn, mặc định là thời điểm hiện tại.
- * @property {String} bb_TrangThai - Trạng thái của lời mời kết bạn (Đang chờ, Đã chấp nhận, Đã từ chối).
- * @property {Date} bb_NgayTao - Thời điểm thông tin được khởi tạo
- * @property {Date} bb_NgayCapNhat - thời điểm thông tin được cập nhật.
- */
 const banBeSchema = new mongoose.Schema(
   {
     nd_ID_GuiLoiMoi: {

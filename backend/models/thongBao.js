@@ -1,15 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} thongBaoSchema
- * @property {String} tb_ID - Khóa chính, mã thông báo.
- * @property {mongoose.Schema.Types.ObjectId} nv_ID - Khóa ngoại, mã nhân viên tạo thông báo.
- * @property {String} tb_TieuDe - Tiêu đề của thông báo.
- * @property {String} tb_NoiDung - Nội dung chi tiết của thông báo.
- * @property {String} tb_LoaiThongBao - Loại thông báo ("Thông tin", "Cảnh báo", "Khẩn cấp").
- * @property {Date} tb_NgayTao - Thời điểm thông báo được tạo.
- * @property {Date} tb_NgayCapNhat - Thời điểm thông báo được cập nhật lần cuối.
- */
 const thongBaoSchema = new mongoose.Schema(
   {
     nv_ID: {

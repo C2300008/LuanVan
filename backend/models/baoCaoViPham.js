@@ -1,18 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} baoCaoViPhamSchema
- * @property {String} bcvp_ID - Khóa chính, mã báo cáo vi phạm.
- * @property {mongoose.Schema.Types.ObjectId} nv_ID - Khóa ngoại, mã nhân viên xử lý báo cáo (có thể null nếu chưa được phân công).
- * @property {mongoose.Schema.Types.ObjectId} nd_ID_BaoCao - Khóa ngoại, mã người dùng thực hiện báo cáo.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID_BiBaoCao - Khóa ngoại, mã người dùng bị báo cáo vi phạm.
- * @property {String} bcvp_LoaiViPham - Loại vi phạm (ví dụ: "Nội dung không phù hợp", "Spam", "Lạm dụng", v.v.).
- * @property {String} bcvp_NoiDung - Nội dung chi tiết của báo cáo vi phạm.
- * @property {String} bcvp_TrangThai - Trạng thái xử lý báo cáo (Chờ xử lý, Đang xử lý, Đã xử lý).
- * @property {Date} bcvp_NgayBaoCao - Ngày và giờ khi báo cáo được tạo, mặc định là thời điểm hiện tại.
- * @property {Date} bcvp_NgayTao - Thời điểm thông tin được khởi tạo
- * @property {Date} bcvp_NgayCapNhat - thời điểm thông tin được cập nhật.
- */
 const baoCaoViPhamSchema = new mongoose.Schema(
   {
     nv_ID: {

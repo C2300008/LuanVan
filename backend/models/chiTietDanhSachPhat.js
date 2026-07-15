@@ -1,13 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} chiTietDanhSachPhatSchema
- * @property {String} ctdsp_ID - Khóa chính, mã chi tiết danh sách phát.
- * @property {mongoose.Schema.Types.ObjectId} dsp_ID - Khóa ngoại, mã danh sách phát.
- * @property {mongoose.Schema.Types.ObjectId} bn_ID - Khóa ngoại, mã bài nhạc.
- * @property {Date} dsp_NgayTao - thời điểm dữ liệu được khởi tạo.
- * @property {Date} dsp_NgayCapNhat - thời điểm dữ liệu được cập nhật.
- */
 const chiTietDanhSachPhatSchema = new mongoose.Schema(
   {
     dsp_ID: {

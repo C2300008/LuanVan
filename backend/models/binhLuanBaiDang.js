@@ -1,17 +1,6 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} binhLuanBaiDangSchema
- * @property {String} blbd_ID - khóa chính, mã bình luận bài đăng.
- * @property {mongoose.Schema.Types.ObjectId } nd_ID - khóa ngoại, mã người dùng.
- * @property {mongoose.Schema.Types.ObjectId } bd_ID - khóa ngoại, mã khóa ngoại.
- * @property {String} blbd_NoiDung - nội dung bình luận (không vượt quá 200 ký tự).
- * @property {String} blbd_DuongDan - đường dẫn phân cấp cha con (lưu ID bình luận cha phía trước, cách nhau bởi đấu / )
- * @property {Date} blbd_NgayBinhLuan - ngày bình luộn bài đăng (không lớn hơn ngày hiện tại).
- * @property {String} blbd_TrangThai - trạng thái bình luận bài đăng(đang xử lý,đã xóa, đã gửi).
- * @property {Date} blbd_NgayTao - thời điểm dữ liệu được khởi tạo.
- * @property {Date} blbd_NgayCapNhat - thời điểm dữ liệu được cập nhật.
- */
+
 const binhLuanBaiDangSchema = new mongoose.Schema(
   {
     nd_ID: {

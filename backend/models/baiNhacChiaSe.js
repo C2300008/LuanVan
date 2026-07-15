@@ -1,14 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} baiNhacChiaSeSchema
- * @property {String} bncs_ID - mã chia sẻ bài nhạc, được tạo tự động với tiền tố "BNCS_" phía trước.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID - mã người dùng, tham chiếu đến bảng người dùng.
- * @property {mongoose.Schema.Types.ObjectId} bn_ID - mã bài nhạc, tham chiếu đến bảng bài nhạc.
- * @property {Date} bncs_NgayChiaSe - ngày chia sẻ bài nhạc.
- * @property {Date} bncs_NgayTao - thời điểm dữ liệu được khởi tạo.
- * @property {Date} bncs_NgayCapNhat - thời điểm dữ liệu được cập nhật.
- */
 const baiNhacChiaSeSchema = new mongoose.Schema(
   {
     nd_ID: {

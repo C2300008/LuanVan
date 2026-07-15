@@ -1,13 +1,5 @@
 import mongoose from "mongoose";
-/**
- * @typedef {Object} vaiTroSchema
- * @property {String} vt_ID - Khóa chính, mã vai trò.
- * @property {String} vt_TenVaiTro - Tên của vai trò (ví dụ: "Quản trị viên", "Nhân viên", "Khách hàng").
- * @property {String} vt_TrangThai - Trạng thái của vai trò (ví dụ: "Kích hoạt", "Vô hiệu hóa").
- * @property {String} vt_MoTa - Mô tả chi tiết về vai trò và quyền hạn của nó.
- * @property {Date} vt_NgayTao - Thời điểm vai trò được tạo.
- * @property {Date} vt_NgayCapNhat - Thời điểm vai trò được cập nhật lần cuối.
- */
+
 const vaiTroSchema = new mongoose.Schema(
   {
     vt_TenVaiTro: {

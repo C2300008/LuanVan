@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 const theoDoiSchema = new mongoose.Schema(
   {
     nd_ID_TheoDoi: {

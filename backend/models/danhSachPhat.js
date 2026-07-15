@@ -1,14 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} danhSachPhatSchema
- * @property {String} dsp_ID - Khóa chính, mã danh sách phát.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng.
- * @property {String} dsp_TenDanhSach - Tên danh sách phát.
- * @property {String} dsp_MoTa - Mô tả danh sách phát.
- * @property {Date} dsp_NgayTao - thời điểm dữ liệu được khởi tạo.
- * @property {Date} dsp_NgayCapNhat - thời điểm dữ liệu được cập nhật.
- */
 const danhSachPhatSchema = new mongoose.Schema(
   {
     nd_ID: {

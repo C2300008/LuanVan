@@ -1,15 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} chiTietThongBaoSchema
- * @property {String} cttb_ID - Khóa chính, mã chi tiết thông báo.
- * @property {mongoose.Schema.Types.ObjectId} tk_ID - Khóa ngoại, mã tài khoản nhận thông báo.
- * @property {mongoose.Schema.Types.ObjectId} tb_ID - Khóa ngoại, mã thông báo.
- * @property {String} cttb_TrangThai - Trạng thái của chi tiết thông báo (ví dụ: "Đã đọc", "Chưa đọc").
- * @property {Date} cttb_NgayDoc - Thời điểm chi tiết thông báo được đọc (nếu đã đọc).
- * @property {Date} cttb_NgayTao - Thời điểm chi tiết thông báo được tạo.
- * @property {Date} cttb_NgayCapNhat - Thời điểm chi tiết thông báo được cập nhật lần cuối.
- */
 const chiTietThongBaoSchema = new mongoose.Schema(
   {
     tk_ID: {

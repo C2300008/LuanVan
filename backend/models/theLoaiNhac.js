@@ -1,15 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- *
- * @typedef {Object} theLoaiNhacSchema
- * @property {String} tln_ID - khóa chính, mã thể loại nhạc
- * @property {String} tln_TenTheLoai - Tên của thể loại nhạc (từ 2 đến 50 ký tự, và là duy nhất)
- * @property {String} tln_Mota - Đoạn mô tả ngắn về đặc trưng của thể loại(tối đa 500 ký tự).
- * @property {String} tln_TrangThai - Trạng thái hoạt động của thể loại(Hoạt động, Ngưng hoạt động).
- * @property {Date} tln_NgayTao - thời điểm bảng thể loại nhạc được khởi tạo
- * @property {Date} tln_NgayCapNhat - thời điểm thông tin bảng thể loại nhạc được cập nhật.
- */
 const theLoaiNhacSchema = new mongoose.Schema(
   {
     tln_TenTheLoai: {

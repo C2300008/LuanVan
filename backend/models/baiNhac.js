@@ -1,22 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- *
- * @typedef {Object} baiNhacSchema
- * @property {String} bn_ID - khóa chính, mã bài nhạc.
- * @property {mongoose.Schema.Types.ObjectId} ns_ID - khóa ngoại, mã nhạc sĩ.
- * @property {String} bn_TenBaiNhac - Tên của bài nhạc (từ 1 đến 150 ký tự).
- * @property {String} bn_LoiBaiNhac - Lời chi tiết của bài nhạc (có thể để trống).
- * @property {String[]} bn_AnhBia - Mảng danh sách đường dẫn URL lưu trữ hình ảnh bìa của bài nhạc.
- * @property {String} bn_TepAmThanh - Đường dẫn tệp tin âm thanh (.mp3, .wav) lưu trên server.
- * @property {Number} bn_LuotNghe - Tổng lượt nghe của bài nhạc (số nguyên dương >= 0).
- * @property {Number} bn_LuotThich - Tổng số lượt thích từ người dùng (só nguyên dương >= 0).
- * @property {Number} bn_LuotChiaSe - Tổng số lượt chia sẻ bài nhạc (Số nguyên dương >= 0).
- * @property {String} bn_TrangThai - Trạng thái bài nhạc (miễn phí, có bảng quyền).
- * @property {Date} bn_NgayDang - Ngày chính thức phát hành bài nhạc.
- * @property {Date} bn_NgayTao - thời điểm thông tin được khởi tạo.
- * @property {Date} bn_NgayCapNhat - thời điểm thông tin được cập nhật.
- */
 const baiNhacSchema = new mongoose.Schema(
   {
     ns_ID: {

@@ -1,13 +1,5 @@
 import mongoose from "mongoose";
-/**
- * @typedef {Object} cuocTroChuyenSchema
- * @property {String} ctc_ID - Khóa chính, mã cuộc trò chuyện.
- * @property {String} ctc_TenCuocTroChuyen - Tên của cuộc trò chuyện (từ 2 đến 100 ký tự).
- * @property {Number} ctc_SoLuongTinNhan - Số lượng tin nhắn trong cuộc trò chuyện, mặc định là 0 và không âm.
- * @property {String} ctc_TrangThai - Trạng thái hoạt động của cuộc trò chuyện (Hoạt động, Ngưng hoạt động).
- * @property {Date} ctc_NgayTao - thời điểm bảng cuộc trò chuyện được khởi tạo
- * @property {Date} ctc_NgayCapNhat - thời điểm thông tin bảng cuộc trò chuyện được cập nhật.
- */
+
 const cuocTroChuyenSchema = new mongoose.Schema(
   {
     ctc_TenCuocTroChuyen: {

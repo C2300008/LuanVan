@@ -1,14 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} ungHoSchema
- * @property {String} uh_ID - Khóa chính, mã ủng hộ.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID - Khóa ngoại, mã người dùng.
- * @property {mongoose.Schema.Types.ObjectId} ns_ID - Khóa ngoại, mã nhạc sĩ được ủng hộ.
- * @property {String} uh_LoiNhan - lời nhắn của người dùng khi ủng hộ (không được để trống, tối đa 200 ký tự).
- * @property {Date} uh_NgayTao - thời điểm dữ liệu được khởi tạo.
- * @property {Date} uh_NgayCapNhat - thời điểm dữ liệu được cập nhật.
- */
 const ungHoSchema = new mongoose.Schema(
   {
     nd_ID: {

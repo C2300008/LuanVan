@@ -1,16 +1,4 @@
 import mongoose from "mongoose";
-/**
- *
- * @typedef {Object} taiKhoanSchema
- * @property {String} tk_ID - khóa chính, mã tài khoản.
- * @property {String} tk_TenDangNhap - Tên đăng nhập của tài khoản là duy nhất (từ 5 - 30 ký tự).
- * @property {String} tk_Email - Email của tài khoản(phải đúng định dạng email, tự động viết thường).
- * @property {String} tk_MatKhau - Mật khẩu đã được mã hóa (yêu cầu có độ dày ít nhất 6 ký tự).
- * @property {String} tk_TrangThai - Trạng thái khoạt động của tài khoản (hoạt động, bị khóa).
- * @property {null | Date} tk_LanDangNhapCuoi - thời gian hoạt động cuối.
- * @property {Date} tk_NgayTao - thời điểm tài khoản được đăng ký.
- * @property {Date} tk_NgayCapNhat - thời điểm thông tin tài khoản bị thay đổi.
- */
 
 const taiKhoanSchema = new mongoose.Schema(
   {

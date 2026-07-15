@@ -1,15 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} baiDangYeuThichSchema
- * @property {String} bdyt_ID - khóa chính, mã bài đăng yêu thích
- * @property {mongoose.Schema.Types.ObjectId} nd_ID - khóa ngoai, mã người dùng.
- * @property {mongoose.Schema.Types.ObjectId } bd_ID - khóa ngoại, mã bài đăng.
- * @property {Date} bdyt_NgayYeuThich - ngày yêu thích bài đăng.
- * @property {Date} bdyt_NgayTao - thời điểm thông tin được khởi tạo.
- * @property {Date} bdyt_NgayCapNhat - thời điểm thông tin được cập nhật.
- *
- */
 const baiDangYeuThichSchema = new mongoose.Schema(
   {
     nd_ID: {

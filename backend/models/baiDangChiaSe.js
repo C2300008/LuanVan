@@ -1,15 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} baiDangChiaSeSchema
- * @property {String} bdcs_ID - khóa chính, mã bài đăng chia sẻ, được tạo tự động với tiền tố "BDCS_" phía trước.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID - khóa ngoai, mã người dùng.
- * @property {mongoose.Schema.Types.ObjectId } bd_ID - khóa ngoại, mã bài đăng.
- * @property {Date} bdcs_NgayChiaSe - ngày chia se bài đăng.
- * @property {Date} bdcs_NgayTao - thời điểm thông tin được khởi tạo.
- * @property {Date} bdcs_NgayCapNhat - thời điểm thông tin được cập nhật.
- *
- */
 const baiDangChiaSeSchema = new mongoose.Schema(
   {
     nd_ID: {

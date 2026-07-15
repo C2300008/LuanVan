@@ -1,21 +1,5 @@
 import mongoose from "mongoose";
-/**
- * Mô hình dữ liệu cho nhân viên.
- * @typedef {Object} nhanVienSchema
- * @property {String} nv_ID - Khóa chính, mã nhân viên.
- * @property {mongoose.Schema.Types.ObjectId} tk_ID - Khóa ngoại, mã tài khoản liên kết với nhân viên.
- * @property {mongoose.Schema.Types.ObjectId} vt_ID - Khóa ngoại, mã vai trò của nhân viên.
- * @property {String} nv_HoVaTen - Họ và tên của nhân viên.
- * @property {String} nv_SoDienThoai - Số điện thoại của nhân viên, phải hợp lệ theo định dạng số điện thoại Việt Nam.
- * @property {String} nv_DiaChi - Địa chỉ của nhân viên.
- * @property {String} nv_GioiTinh - Giới tính của nhân viên (Nam, Nữ, Khác).
- * @property {Date} nv_NgaySinh - Ngày sinh của nhân viên.
- * @property {String} nv_AnhDaiDien - URL ảnh đại diện của nhân viên.
- * @property {String} nv_CongViec - Công việc hoặc vị trí công tác của nhân viên.
- * @property {Date} nv_NgayVaoLam - Ngày nhân viên bắt đầu làm việc tại công ty.
- * @property {Date} nv_NgayTao - Thời điểm thông tin nhân viên được khởi tạo.
- * @property {Date} nv_NgayCapNhat - Thời điểm thông tin nhân viên được cập nhật.
- */
+
 const nhanVienSchema = new mongoose.Schema(
   {
     tk_ID: {

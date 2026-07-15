@@ -1,13 +1,5 @@
 import mongoose from "mongoose";
-/**
- * @typedef {Object} chiTietBaiNhacSchema
- * @property {String} ctbn_ID - Khóa chính, mã chi tiết bài nhạc.
- * @property {mongoose.Schema.Types.ObjectId } bn_ID - Khóa ngoại, mã bài nhạc.
- * @property {mongoose.Schema.Types.ObjectId } tln_ID - Khóa ngoại, mã thể loại nhac.
- * @property {String} ctbn_TrangThai - Trạng thái chi tiết thể loại( hoạt động, ngưng hoạt động).
- * @property {Date} ctbn_NgayTao - Thời điểm thông tin được khởi tạo
- * @property {Date} ctbn_NgayCapNhat - thời điểm thông tin được cập nhật.
- */
+
 const chiTietBaiNhacSchema = new mongoose.Schema(
   {
     bn_ID: {

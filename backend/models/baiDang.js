@@ -1,19 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * @typedef {Object} baiDangSchema
- * @property {String} bd_ID - khóa chính, mã bài đăng.
- * @property {mongoose.Schema.Types.ObjectId} nd_ID - khóa ngoại, mã người dùng.
- * @property {String} bd_NoiDung - Nội dung bài đăng (từ 1 đến 200 ký tự).
- * @property {[String]} bd_TepDinhKem - tệp đính kèm ảnh hoặc video (kiểu mảng String có thể đăng nhiều hình hoặc nhiều video).
- * @property {Number} bd_LuotThich - Tổng số lượt thích bài đăng (số nguyên dương không âm).
- * @property {Number} bd_LuotXem - Tổng số luợt xem bài đăng (số nguyên dương không âm).
- * @property {Number} bd_LuotChiaSe - Tổng số lượt chia sẻ bài đăng (số nguyên dương không âm).
- * @property {String} bd_TrangThai - Trạng thái bài đăng (công khai, riêng tư).
- * @property {Date} bd_NgayTao - thời điểm thông tin được khởi tạo.
- * @property {Date} bd_NgayCapNhat - thời điểm thông tin được cập nhật
- **/
-
 const baiDangSchema = new mongoose.Schema(
   {
     nd_ID: {
